@@ -24,5 +24,10 @@
         {
             return altura + altura + altura;
         }
+
+        public override string ToString()
+        {
+            return $"TrianguloEquilatero";
+        }
     }
 }
