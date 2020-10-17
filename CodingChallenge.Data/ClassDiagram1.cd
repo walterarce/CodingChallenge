@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CodingChallenge.Data.Classes.Cuadrado">
+    <Position X="12.25" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAABAAIAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Cuadrado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CodingChallenge.Data.Classes.FormaGeometrica">
+    <Position X="6.5" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAJAAAAAAAAAAAAAAAAAAABAAMAAAAAAAAAQ=</HashCode>
+      <FileName>Classes\FormaGeometrica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CodingChallenge.Data.Classes.TrianguloEquilatero">
+    <Position X="7" Y="4.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAABAAIAAAAAAAQAA=</HashCode>
+      <FileName>Classes\TrianguloEquilatero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CodingChallenge.Data.Classes.Circulo">
+    <Position X="2" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAABAAIAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Circulo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CodingChallenge.Data.Classes.Idioma">
+    <Position X="11.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAQAAAAAAAAgA=</HashCode>
+      <FileName>Classes\Idioma.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
