@@ -6,11 +6,11 @@
 
         public decimal Base { get; set; }
         
-        public TrianguloEquilatero(decimal lado) : base(lado)
+        public TrianguloEquilatero(decimal lado, Idioma idioma) : base(lado, idioma)
         {
         }
 
-        public TrianguloEquilatero(decimal _lado, decimal _base)
+        public TrianguloEquilatero(decimal _lado, decimal _base) : base()
         {
             altura = _lado;
             Base = _base;
@@ -27,7 +27,7 @@
 
         public override string ToString()
         {
-            return $"TrianguloEquilatero";
+            return Texto.Traslate_Fig_Name(Idioma, this);
         }
     }
 }

@@ -5,7 +5,7 @@
         public decimal baseinferior { get; set; }
         public decimal basesuperior { get; set; }
         public decimal altura { get; set; }
-        public Trapecio(decimal lado) : base(lado)
+        public Trapecio(decimal lado, Idioma idioma) : base(lado,idioma)
         {
 
         }
@@ -23,12 +23,12 @@
 
         public override decimal CalcularPerimetro()
         {
-            throw new System.NotImplementedException();
+            return (basesuperior + baseinferior) / 2 * altura;
         }
 
         public override string ToString()
         {
-            return $"Trapecio";
+            return Texto.Traslate_Fig_Name(Idioma, this);
         }
     }
 }

@@ -8,7 +8,7 @@
         {
             altura = _altura;
         }
-        public Rectangulo(decimal lado) : base(lado)
+        public Rectangulo(decimal lado, Idioma idioma) : base(lado,idioma)
         {
         }
 
@@ -20,6 +20,11 @@
         public override decimal CalcularPerimetro()
         {
             return (_lado + _altura) + (_lado + _altura);
+        }
+
+        public override string ToString()
+        {
+            return Texto.Traslate_Fig_Name(Idioma, this);
         }
     }
 }

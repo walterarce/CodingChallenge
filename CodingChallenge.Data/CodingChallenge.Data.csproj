@@ -71,9 +71,10 @@
     <Compile Include="Classes\Cuadrado.cs" />
     <Compile Include="Classes\FormaGeometrica.cs" />
     <Compile Include="Classes\Idioma.cs" />
-    <Compile Include="Classes\Printer.cs" />
+    <Compile Include="Classes\LlaveFormas.cs" />
+    <Compile Include="Classes\Reporte.cs" />
     <Compile Include="Classes\Rectangulo.cs" />
-    <Compile Include="Classes\tipoFormaGeometrica.cs" />
+    <Compile Include="Classes\Texto.cs" />
     <Compile Include="Classes\Trapecio.cs" />
     <Compile Include="Classes\Triangulo.cs" />
     <Compile Include="Classes\TrianguloEquilatero.cs" />

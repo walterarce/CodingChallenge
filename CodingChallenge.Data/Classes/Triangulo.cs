@@ -14,13 +14,13 @@ namespace CodingChallenge.Data.Classes
             return _lado * 3;
         }
 
-        public Triangulo(decimal lado) : base(lado)
+        public Triangulo(decimal lado, Idioma idioma) : base(lado,idioma)
         {
         }
 
         public override string ToString()
         {
-            return $"Triangulo";
+            return Texto.Traslate_Fig_Name(Idioma, this);
         }
     }
 }

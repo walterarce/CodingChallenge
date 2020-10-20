@@ -16,13 +16,13 @@ namespace CodingChallenge.Data.Classes
             return (decimal)Math.PI * _lado;
         }
 
-        public Circulo(decimal lado) : base(lado)
+        public Circulo(decimal lado, Idioma idioma) : base(lado, idioma)
         {
         }
 
         public override string ToString()
         {
-            return $"Circulo";
+            return Texto.Traslate_Fig_Name(Idioma,this);
         }
     }
 }

@@ -16,8 +16,6 @@ namespace CodingChallenge.Data.Classes
 {
     public abstract class FormaGeometrica
     {
-
-
         public readonly decimal _lado;
 
         public readonly decimal _altura;
@@ -29,10 +27,11 @@ namespace CodingChallenge.Data.Classes
         public Idioma Idioma { get; set; }
 
 
-        public FormaGeometrica(decimal lado)
+        public FormaGeometrica(decimal lado, Idioma idioma)
         {
             _lado = lado;
             Tipo = this;
+            tIdioma = idioma;
         }
 
         public FormaGeometrica(decimal lado, decimal altura)
@@ -41,14 +40,22 @@ namespace CodingChallenge.Data.Classes
             _altura = altura;
             Tipo = this;
         }
-
-        protected FormaGeometrica()
+        public FormaGeometrica()
         {
-            
+         
         }
+
+
+        public decimal area { get; set; }
+
+        public decimal perimetro { get; set; }
+
+        public Idioma tIdioma { get; set; }
 
         public abstract decimal CalcularArea();
 
         public abstract decimal CalcularPerimetro();
+
+        
     }
 }
