@@ -18,7 +18,7 @@ namespace CodingChallenge.Data.Tests
         [TestCase]
         public void TestConUnRectangulo()
         {
-            var rectangulo = new List<FormaGeometrica> { new Rectangulo(4, Idioma.Castellano) };
+            var rectangulo = new List<FormaGeometrica> { new Rectangulo(4) };
 
             var resumen = Reporte.Imprimir(rectangulo, Idioma.Castellano);
             Assert.AreEqual("<h1>Reporte de Formas</h1>Figura: Rectangulo, Cantidad:1Suma de Area :  Suma de Perimetros : 8 <br/></br>TOTAL:1 , Figuras <br/>Perimetro8 Area", resumen);
@@ -34,7 +34,7 @@ namespace CodingChallenge.Data.Tests
         [TestCase]
         public void TestResumenListaConUnCuadrado()
         {
-            var cuadrados = new List<FormaGeometrica> { new Cuadrado(4, Idioma.Castellano) };
+            var cuadrados = new List<FormaGeometrica> { new Cuadrado(4) };
 
             var resumen = Reporte.Imprimir(cuadrados, Idioma.Castellano);
 
@@ -46,9 +46,9 @@ namespace CodingChallenge.Data.Tests
         {
             var cuadrados = new List<FormaGeometrica>
             {
-                new Cuadrado(5,Idioma.Castellano),
-                new Cuadrado(1,Idioma.Castellano),
-                new Cuadrado(3,Idioma.Castellano)
+                new Cuadrado(5),
+                new Cuadrado(1),
+                new Cuadrado(3)
             };
 
             var resumen = Reporte.Imprimir(cuadrados, Idioma.Castellano);
@@ -61,12 +61,12 @@ namespace CodingChallenge.Data.Tests
         {
             var formas = new List<FormaGeometrica>
             {
-                new Cuadrado(5,Idioma.Castellano),
-                new Circulo(3,Idioma.Castellano),
+                new Cuadrado(5),
+                new Circulo(3),
                 new TrianguloEquilatero(4,3),
-                new Cuadrado(2,Idioma.Castellano),
+                new Cuadrado(2),
                 new TrianguloEquilatero(9,3),
-                new Circulo(2.7m,Idioma.Castellano),
+                new Circulo(2.7m),
                 new TrianguloEquilatero(4.2m,5.6m)
             };
 
@@ -82,12 +82,12 @@ namespace CodingChallenge.Data.Tests
         {
             var formas = new List<FormaGeometrica>
             {
-                new Cuadrado(5,Idioma.Castellano),
-                new Circulo(3,Idioma.Castellano),
+                new Cuadrado(5),
+                new Circulo(3),
                 new TrianguloEquilatero(4,1.5m),
-                new Cuadrado(2,Idioma.Castellano),
+                new Cuadrado(2),
                 new TrianguloEquilatero(9,4),
-                new Circulo(2.75m,Idioma.Castellano),
+                new Circulo(2.75m),
                 new TrianguloEquilatero(4.2m,2.5m)
             };
 
