@@ -31,6 +31,7 @@ iolasp/services/xml/*.xml
 ipch/
 obj/
 .vs/
+packages/
 [Bb]in
 [Dd]ebug*/
 [Rr]elease*/
