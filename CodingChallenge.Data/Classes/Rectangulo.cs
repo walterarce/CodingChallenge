@@ -22,9 +22,6 @@
             return (_lado + _altura) + (_lado + _altura);
         }
 
-        public override string ToString()
-        {
-            return Texto.Traslate_Fig_Name(Idioma, this);
-        }
+      
     }
 }

@@ -26,9 +26,6 @@
             return (basesuperior + baseinferior) / 2 * altura;
         }
 
-        public override string ToString()
-        {
-            return Texto.Traslate_Fig_Name(Idioma, this);
-        }
+        
     }
 }

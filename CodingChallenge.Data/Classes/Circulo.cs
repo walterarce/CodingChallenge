@@ -20,9 +20,6 @@ namespace CodingChallenge.Data.Classes
         {
         }
 
-        public override string ToString()
-        {
-            return Texto.Traslate_Fig_Name(Idioma,this);
-        }
+       
     }
 }

@@ -80,7 +80,6 @@
     <Compile Include="Classes\ProviderIdioma.cs" />
     <Compile Include="Classes\Reporte.cs" />
     <Compile Include="Classes\Rectangulo.cs" />
-    <Compile Include="Classes\Texto.cs" />
     <Compile Include="Classes\TextoIdioma.cs" />
     <Compile Include="Classes\Trapecio.cs" />
     <Compile Include="Classes\Triangulo.cs" />
