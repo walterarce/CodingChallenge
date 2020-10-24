@@ -16,7 +16,7 @@ namespace CodingChallenge.Data.Classes
             return (decimal)Math.PI * _lado;
         }
 
-        public Circulo(decimal lado, Idioma idioma) : base(lado, idioma)
+        public Circulo(decimal lado) : base(lado)
         {
         }
 

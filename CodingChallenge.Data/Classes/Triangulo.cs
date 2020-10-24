@@ -14,7 +14,7 @@ namespace CodingChallenge.Data.Classes
             return _lado * 3;
         }
 
-        public Triangulo(decimal lado, Idioma idioma) : base(lado,idioma)
+        public Triangulo(decimal lado) : base(lado)
         {
         }
 

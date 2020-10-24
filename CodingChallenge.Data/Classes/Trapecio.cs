@@ -5,7 +5,7 @@
         public decimal baseinferior { get; set; }
         public decimal basesuperior { get; set; }
         public decimal altura { get; set; }
-        public Trapecio(decimal lado, Idioma idioma) : base(lado,idioma)
+        public Trapecio(decimal lado, Idioma idioma) : base(lado)
         {
 
         }

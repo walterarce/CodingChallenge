@@ -6,7 +6,7 @@
 
         public decimal Base { get; set; }
         
-        public TrianguloEquilatero(decimal lado, Idioma idioma) : base(lado, idioma)
+        public TrianguloEquilatero(decimal lado, Idioma idioma) : base(lado)
         {
         }
 

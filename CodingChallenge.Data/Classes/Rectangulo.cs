@@ -8,7 +8,7 @@
         {
             altura = _altura;
         }
-        public Rectangulo(decimal lado, Idioma idioma) : base(lado,idioma)
+        public Rectangulo(decimal lado) : base(lado)
         {
         }
 

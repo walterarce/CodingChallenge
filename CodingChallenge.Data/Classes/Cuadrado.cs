@@ -14,15 +14,11 @@ namespace CodingChallenge.Data.Classes
             return _lado * 4;
         }
 
-        public Cuadrado(decimal lado, Idioma idioma) : base(lado,idioma)
+        public Cuadrado(decimal lado) : base(lado)
         {
             Tipo = this;
         }
 
-        public override string ToString()
-        {
-           
-            return Texto.Traslate_Fig_Name(Idioma, this);
-        }
+       
     }
 }
