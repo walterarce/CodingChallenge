@@ -25,5 +25,10 @@ namespace CodingChallenge.Data.Classes
             if (forma == "Cuadrado")
             { NombredeFigura = "Praça"; }
         }
+
+        public override string TraducirNombreForma(string forma)
+        {
+           return "Praça";
+        }
     }
 }

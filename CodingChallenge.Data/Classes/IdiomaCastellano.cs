@@ -18,17 +18,15 @@ namespace CodingChallenge.Data.Classes
             Traslate_Fig_Area = "Area";
             Traslate_Suma_Perimetro = "Suma de Perimetros";
             Traslate_Suma_Area = "Suma de Area";
-
           
+
         }
 
-        public IdiomaCastellano(string forma)
-        {
-            if (forma == "Cuadrado")
-            { NombredeFigura = "Cuadrado"; }
-            
-        }
        
 
+        public override string TraducirNombreForma(string forma)
+        {
+            return "Cuadrado";
+        }
     }
 }

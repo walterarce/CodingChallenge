@@ -9,7 +9,7 @@ namespace CodingChallenge.Data.Classes
 {
     public class ProviderIdioma
     {
-        public TextoIdioma GetTextoIdioma(Idioma idioma)
+        public static TextoIdioma GetTextoIdioma(Idioma idioma)
         {
             if (idioma == Idioma.Castellano)
             {
@@ -28,27 +28,6 @@ namespace CodingChallenge.Data.Classes
             return null;
         }
 
-        public TextoIdioma GetTextoIdioma(Idioma idioma, string forma)
-        {
-        
-                if (idioma == Idioma.Castellano)
-                {
-                    return new IdiomaCastellano(forma);
-                }
-
-                if (idioma == Idioma.Ingles)
-                {
-                    return new IdiomaIngles(forma);
-                }
-
-
-                if (idioma == Idioma.Portugues)
-                {
-                    return new IdiomaPortugues(forma);
-                }
-            return null;
-        }
-
-
+       
     }
 }

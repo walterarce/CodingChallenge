@@ -17,5 +17,7 @@ namespace CodingChallenge.Data.Classes
         public string Traslate_Suma_Perimetro;
         public string Traslate_Suma_Area;
         public string NombredeFigura;
+
+        public abstract string TraducirNombreForma(string forma);
     }
 }

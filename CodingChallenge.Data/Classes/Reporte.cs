@@ -16,16 +16,16 @@ namespace CodingChallenge.Data.Classes
         public static string Imprimir(List<FormaGeometrica> formas, Idioma idioma)
         {
             var sb = new StringBuilder();
-            var providerIdioma = new ProviderIdioma();
+            
             if (!formas.Any())
             {
-              sb.Append(providerIdioma.GetTextoIdioma(idioma)) ;
+              sb.Append(ProviderIdioma.GetTextoIdioma(idioma)) ;
             }
             else
             {
                 // Hay por lo menos una forma
                 // HEADER
-               sb.Append(providerIdioma.GetTextoIdioma(idioma).Encabezado);
+               sb.Append(ProviderIdioma.GetTextoIdioma(idioma).Encabezado);
               
 
                 var groupFormas =
@@ -41,16 +41,16 @@ namespace CodingChallenge.Data.Classes
 
                 foreach (var scr in groupFormas)
                 {
-                    sb.Append($"{providerIdioma.GetTextoIdioma(idioma).Traslate_Fig_Title}: {providerIdioma.GetTextoIdioma(idioma, scr.Stream.Name).NombredeFigura }, " +
-                              $"{providerIdioma.GetTextoIdioma(idioma).Traslate_Fig_Cantidad}:{scr.SumaFigura}" +
-                              $"{providerIdioma.GetTextoIdioma(idioma).Traslate_Suma_Area} : {scr.SumaArea:#.##} " +
-                              $"{providerIdioma.GetTextoIdioma(idioma).Traslate_Suma_Perimetro} : {scr.SumaPerimetro:#.##} <br/>");
+                    sb.Append($"{ProviderIdioma.GetTextoIdioma(idioma).Traslate_Fig_Title}: {ProviderIdioma.GetTextoIdioma(idioma).TraducirNombreForma(scr.Stream.Name) }, " +
+                              $"{ProviderIdioma.GetTextoIdioma(idioma).Traslate_Fig_Cantidad}:{scr.SumaFigura}" +
+                              $"{ProviderIdioma.GetTextoIdioma(idioma).Traslate_Suma_Area} : {scr.SumaArea:#.##} " +
+                              $"{ProviderIdioma.GetTextoIdioma(idioma).Traslate_Suma_Perimetro} : {scr.SumaPerimetro:#.##} <br/>");
                 }
 
                 // FOOTER
-                 sb.Append($"</br>TOTAL:{formas.Count} , {providerIdioma.GetTextoIdioma(idioma).Traslate_Fig_Title}s <br/>");
-                 sb.Append(providerIdioma.GetTextoIdioma(idioma).Traslate_Fig_Perimetro+ (formas.Sum(x=>x.CalcularPerimetro())).ToString("#.##") + " ");
-                 sb.Append(providerIdioma.GetTextoIdioma(idioma).Traslate_Fig_Area + (formas.Sum(x =>x.CalcularArea())).ToString("#.##"));
+                 sb.Append($"</br>TOTAL:{formas.Count} , {ProviderIdioma.GetTextoIdioma(idioma).Traslate_Fig_Title}s <br/>");
+                 sb.Append(ProviderIdioma.GetTextoIdioma(idioma).Traslate_Fig_Perimetro+ (formas.Sum(x=>x.CalcularPerimetro())).ToString("#.##") + " ");
+                 sb.Append(ProviderIdioma.GetTextoIdioma(idioma).Traslate_Fig_Area + (formas.Sum(x =>x.CalcularArea())).ToString("#.##"));
             }
 
             return sb.ToString();
